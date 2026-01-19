@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Dew Collection | Premium Flowers - Floria</title>
+    <meta name="description"
+        content="Fresh Dew Collection - Nature-inspired flowers with soft colors and natural elegance.">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    <link rel="stylesheet" href="blossom-aura.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .card {
+            position: relative;
+        }
+
+        .card .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .card .img-container img {
+            transition: transform 0.3s ease;
+        }
+
+        .hero {
+            background-image: url('image/fresh.jpg');
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Fresh Dew Collection</h1>
+        <div class="header-right">
+            <a href="#" class="cart" id="cartBtn">🛒 <span class="count">0</span></a>
+            <a href="index.html" class="back-link-btn">← Back to Main Shop</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>BRING FRESHNESS & JOY WITH OUR FRESH DEW COLLECTION</h2>
+        <h4>About Fresh Dew Collection</h4>
+        <p>Fresh Dew Collection is inspired by the beauty of early morning flowers.
+            Each bouquet captures the softness of fresh petals and gentle hues.
+            Natural colors and light fragrances create a calming floral experience.
+            Designed to bring freshness and elegance into everyday moments.
+            Perfect for simple gifts, home décor, and peaceful celebrations.
+            Fresh Dew Collection spreads happiness with nature’s pure charm. 🌿</p>
+        <a href="#collections" class="btn">Explore Collection</a>
+    </section>
+
+    <section class="section" id="collections">
+        <h3 class="section-title">Fresh Dew Selections</h3>
+        <div class="grid">
+            <article class="card">
+                <div class="img-container">
+                    <img src="image1/tupils.jpg" alt="Morning Tulip Bliss" loading="lazy">
+                    <div class="card-zoom-controls">
+                        <button class="card-zoom-out">−</button>
+                        <button class="card-zoom-in">+</button>
+                    </div>
+                </div>
+                <h4>Morning Tulip Bliss</h4>
+                <p class="price">$14.00</p>
+                <button class="btn small view-details-btn">View Details</button>
+                <button class="btn small add-to-cart-btn" data-id="fd1" data-name="Morning Tulip Bliss"
+                    data-price="14">Add to Cart</button>
+            </article>
+
+            <article class="card">
+                <div class="img-container">
+                    <img src="image1/11432033.png" alt="Pure White Roses" loading="lazy">
+                    <div class="card-zoom-controls">
+                        <button class="card-zoom-out">−</button>
+                        <button class="card-zoom-in">+</button>
+                    </div>
+                </div>
+                <h4>Pure White Roses</h4>
+                <p class="price">$18.00</p>
+                <button class="btn small view-details-btn">View Details</button>
+                <button class="btn small add-to-cart-btn" data-id="fd2" data-name="Pure White Roses" data-price="18">Add
+                    to Cart</button>
+            </article>
+
+            <article class="card">
+                <div class="img-container">
+                    <img src="image1/lity.jpg" alt="Fresh Lily Charm" loading="lazy">
+                    <div class="card-zoom-controls">
+                        <button class="card-zoom-out">−</button>
+                        <button class="card-zoom-in">+</button>
+                    </div>
+                </div>
+                <h4>Fresh Lily Charm</h4>
+                <p class="price">$20.00</p>
+                <button class="btn small view-details-btn">View Details</button>
+                <button class="btn small add-to-cart-btn" data-id="fd3" data-name="Fresh Lily Charm" data-price="20">Add
+                    to Cart</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="why">
+        <h3 class="section-title">Why Choose Fresh Dew</h3>
+        <div class="why-grid">
+            <div class="why-box">
+                <span class="icon">🌿</span>
+                <h4>Naturally Fresh</h4>
+                <p>Flowers selected for freshness and natural beauty.</p>
+            </div>
+            <div class="why-box">
+                <span class="icon">💧</span>
+                <h4>Soft & Calm Designs</h4>
+                <p>Minimal, soothing arrangements for peaceful moments.</p>
+            </div>
+            <div class="why-box">
+                <span class="icon">🌸</span>
+                <h4>Everyday Elegance</h4>
+                <p>Perfect for home, office, and thoughtful gifting.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-box about-us">
+                <h3>Fresh Dew Collection</h3>
+                <p>Nature's calm and freshness in beautiful floral arrangements.</p>
+            </div>
+            <div class="footer-box links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="view.html">All Products</a>
+            </div>
+            <div class="footer-box newsletter">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" class="email-input" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="credit">© 2024 <a href="index.html">Floria</a> - Fresh Dew Collection</div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

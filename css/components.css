@@ -1,0 +1,422 @@
+/* ===== TOAST NOTIFICATION ===== */
+.toast-notification {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: linear-gradient(45deg, #333, #555);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 500;
+    z-index: 99999;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.toast-notification.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+/* ===== PAGE LOADER ===== */
+.page-loader {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #fff5f8 0%, #fdf6f9 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    transition: opacity 0.5s ease;
+}
+
+.page-loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-flower {
+    font-size: 5rem;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.loader-text {
+    font-size: 1.8rem;
+    color: #e84393;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* ===== SCROLL TO TOP ===== */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #e84393, #fd79a8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    box-shadow: 0 5px 20px rgba(232, 67, 147, 0.4);
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top-btn:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== QUICK VIEW MODAL ===== */
+.quick-view-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow: hidden;
+    animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    z-index: 10;
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-body img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.modal-info {
+    flex: 1;
+    padding: 2rem;
+    min-width: 280px;
+}
+
+.modal-info h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.modal-info .price {
+    font-size: 1.5rem;
+    color: #e84393;
+    font-weight: 700;
+}
+
+/* ===== QUANTITY SELECTOR ===== */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.qty-btn {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.qty-btn:hover {
+    background: #e84393;
+    color: white;
+    border-color: #e84393;
+}
+
+.quantity-selector input {
+    width: 60px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* ===== ADD TO CART BUTTON ===== */
+.btn-add-modal,
+.add-to-cart-btn {
+    background: linear-gradient(45deg, #e84393, #fd79a8);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-add-modal:hover,
+.add-to-cart-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(232, 67, 147, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .modal-body img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .toast-notification {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* ===== DETAILS MODAL ===== */
+.details-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-modal .modal-content {
+    max-width: 900px;
+    width: 95%;
+}
+
+.details-modal .modal-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Image Zoom Container */
+.image-zoom-container {
+    width: 50%;
+    min-width: 300px;
+    position: relative;
+    overflow: hidden;
+    background: #f8f8f8;
+}
+
+.image-zoom-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.zoom-controls {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 8px 15px;
+    border-radius: 25px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: linear-gradient(45deg, #e84393, #fd79a8);
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.zoom-btn:hover {
+    transform: scale(1.1);
+}
+
+.zoom-level {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    min-width: 45px;
+    text-align: center;
+}
+
+/* Modal Info */
+.details-modal .modal-info {
+    flex: 1;
+    padding: 30px;
+    min-width: 280px;
+}
+
+.details-modal .modal-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details-modal .modal-info .price {
+    font-size: 28px;
+    color: #e84393;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.details-modal .description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.features-list li {
+    padding: 8px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Card Zoom Controls */
+.card-zoom-controls {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-zoom-controls,
+.product-card:hover .card-zoom-controls {
+    opacity: 1;
+}
+
+.card-zoom-in,
+.card-zoom-out {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #e84393;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-zoom-in:hover,
+.card-zoom-out:hover {
+    background: #e84393;
+    color: white;
+}
+
+/* View Details Button */
+.view-details-btn {
+    background: transparent;
+    border: 2px solid #e84393;
+    color: #e84393;
+    margin-top: 8px;
+}
+
+.view-details-btn:hover {
+    background: #e84393;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .image-zoom-container {
+        width: 100%;
+    }
+
+    .image-zoom-container img {
+        height: 300px;
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petal Paradise | Premium Flower Collection - Floria</title>
+    <meta name="description"
+        content="Petal Paradise - Curated flower collection designed to bring joy, elegance, and freshness to every occasion.">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌷</text></svg>">
+    <link rel="stylesheet" href="blossom-aura.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .card {
+            position: relative;
+        }
+
+        .card .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .card .img-container img {
+            transition: transform 0.3s ease;
+        }
+
+        .hero {
+            background-image: url('image/petal.jpg');
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Petal Paradise</h1>
+        <div class="header-right">
+            <a href="#" class="cart" id="cartBtn">🛒 <span class="count">0</span></a>
+            <a href="index.html" class="back-link-btn">← Back to Main Shop</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>ORDER BEAUTIFUL FLOWERS FROM PETAL PARADISE!</h2>
+        <h4>About Petal Paradise</h4>
+        <p>Petal Paradise is a curated flower collection designed to bring joy and elegance.
+            Each arrangement is crafted with fresh, vibrant, and handpicked flowers.
+            Our bouquets reflect beauty, warmth, and timeless floral charm.
+            Perfect for gifting, celebrations, and everyday special moments.
+            Every bloom is arranged to express emotions with grace and care.
+            Let Petal Paradise turn your feelings into unforgettable flowers.🌷</p>
+        <a href="#collections" class="btn">Explore Collection</a>
+    </section>
+
+    <section class="section" id="collections">
+        <h3 class="section-title">Exclusive Collections</h3>
+        <div class="grid">
+            <!-- Card 1 -->
+            <article class="card">
+                <div class="img-container">
+                    <img src="image1/premium.jpg" alt="Premium Bouquet" loading="lazy">
+                    <div class="card-zoom-controls">
+                        <button class="card-zoom-out">−</button>
+                        <button class="card-zoom-in">+</button>
+                    </div>
+                </div>
+                <h4>Premium Bouquet</h4>
+                <p class="price">$25.00</p>
+                <button class="btn small view-details-btn">View Details</button>
+                <button class="btn small add-to-cart-btn" data-id="pp1" data-name="Premium Bouquet" data-price="25">Add
+                    to Cart</button>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <div class="img-container">
+                    <img src="image1/soft.jpg" alt="Soft Flower Arrangement" loading="lazy">
+                    <div class="card-zoom-controls">
+                        <button class="card-zoom-out">−</button>
+                        <button class="card-zoom-in">+</button>
+                    </div>
+                </div>
+                <h4>Soft Flower</h4>
+                <p class="price">$10.00</p>
+                <button class="btn small view-details-btn">View Details</button>
+                <button class="btn small add-to-cart-btn" data-id="pp2" data-name="Soft Flower" data-price="10">Add to
+                    Cart</button>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <div class="img-container">
+                    <img src="image1/hard.jpg" alt="Imported Tulip Bouquet" loading="lazy">
+                    <div class="card-zoom-controls">
+                        <button class="card-zoom-out">−</button>
+                        <button class="card-zoom-in">+</button>
+                    </div>
+                </div>
+                <h4>Imported Tulip Bouquet</h4>
+                <p class="price">$18.00</p>
+                <button class="btn small view-details-btn">View Details</button>
+                <button class="btn small add-to-cart-btn" data-id="pp3" data-name="Imported Tulip Bouquet"
+                    data-price="18">Add to Cart</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="why">
+        <h3 class="section-title">Why Choose Petal Paradise</h3>
+        <div class="why-grid">
+            <div class="why-box">
+                <span class="icon">🌸</span>
+                <h4>Fresh Flowers</h4>
+                <p>We use freshly picked flowers in every arrangement.</p>
+            </div>
+            <div class="why-box">
+                <span class="icon">🚚</span>
+                <h4>Reliable Delivery</h4>
+                <p>Safe and timely delivery across the city.</p>
+            </div>
+            <div class="why-box">
+                <span class="icon">🎁</span>
+                <h4>Gift Ready</h4>
+                <p>Beautiful wrapping that's perfect for gifting.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-box about-us">
+                <h3>Petal Paradise</h3>
+                <p>Premium floral designs crafted for love, joy, and special celebrations.</p>
+            </div>
+            <div class="footer-box links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="view.html">All Products</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-box newsletter">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" class="email-input" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="credit">© 2024 <a href="index.html">Floria</a> - Petal Paradise</div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration Blooms | Festive Flowers - Floria</title>
+    <meta name="description" content="Celebration Blooms - Vibrant flowers for every special occasion.">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎉</text></svg>">
+    <link rel="stylesheet" href="blossom-aura.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .card {
+            position: relative;
+        }
+
+        .card .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .card .img-container img {
+            transition: transform 0.3s ease;
+        }
+
+        .hero {
+            background-image: url('image/wendding.jpg');
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Celebration Blooms</h1>
+        <div class="header-right">
+            <a href="#" class="cart" id="cartBtn">🛒 <span class="count">0</span></a>
+            <a href="index.html" class="back-link-btn">← Back to Main Shop</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>CELEBRATE EVERY MOMENT WITH BLOOMS THAT SPREAD JOY</h2>
+        <h4>About Celebration Blooms</h4>
+        <p>Celebration Blooms Collection adds color, joy, and happiness to every special occasion.
+            Each arrangement is designed with vibrant and cheerful flowers.
+            Perfect for birthdays, achievements, and joyful milestones.
+            Bold colors and fresh blooms create a festive floral experience.
+            Every bouquet spreads smiles and positive energy.
+            Celebrate life’s happiest moments with Celebration Blooms. 🎊</p>
+        <a href="#collections" class="btn">Explore Collection</a>
+    </section>
+
+    <section class="section" id="collections">
+        <h3 class="section-title">Celebration Selections</h3>
+        <div class="grid">
+            <article class="card">
+                <div class="img-container">
+                    <img src="image2/pack.jpg" alt="Colorful Celebration Bouquet" loading="lazy">
+                    <div class="card-zoom-controls">
+                        <button class="card-zoom-out">−</button>
+                        <button class="card-zoom-in">+</button>
+                    </div>
+                </div>
+                <h4>Colorful Celebration Bouquet</h4>
+                <p class="price">$38.00</p>
+                <button class="btn small view-details-btn">View Details</button>
+                <button class="btn small add-to-cart-btn" data-id="cb1" data-name="Colorful Celebration Bouquet"
+                    data-price="38">Add to Cart</button>
+            </article>
+
+            <article class="card">
+                <div class="img-container">
+                    <img src="image2/sun.jpg" alt="Sunny Sunflower Joy" loading="lazy">
+                    <div class="card-zoom-controls">
+                        <button class="card-zoom-out">−</button>
+                        <button class="card-zoom-in">+</button>
+                    </div>
+                </div>
+                <h4>Sunny Sunflower Joy</h4>
+                <p class="price">$30.00</p>
+                <button class="btn small view-details-btn">View Details</button>
+                <button class="btn small add-to-cart-btn" data-id="cb2" data-name="Sunny Sunflower Joy"
+                    data-price="30">Add to Cart</button>
+            </article>
+
+            <article class="card">
+                <div class="img-container">
+                    <img src="image2/party.jpg" alt="Gerbera Party Mix" loading="lazy">
+                    <div class="card-zoom-controls">
+                        <button class="card-zoom-out">−</button>
+                        <button class="card-zoom-in">+</button>
+                    </div>
+                </div>
+                <h4>Gerbera Party Mix</h4>
+                <p class="price">$34.00</p>
+                <button class="btn small view-details-btn">View Details</button>
+                <button class="btn small add-to-cart-btn" data-id="cb3" data-name="Gerbera Party Mix"
+                    data-price="34">Add to Cart</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="why">
+        <h3 class="section-title">Why Choose Celebration Blooms</h3>
+        <div class="why-grid">
+            <div class="why-box">
+                <span class="icon">🎉</span>
+                <h4>Vibrant Colors</h4>
+                <p>Bright, joyful flowers that light up any celebration.</p>
+            </div>
+            <div class="why-box">
+                <span class="icon">🌈</span>
+                <h4>Perfect for Events</h4>
+                <p>Ideal for birthdays, parties, and special achievements.</p>
+            </div>
+            <div class="why-box">
+                <span class="icon">🎁</span>
+                <h4>Instant Smiles</h4>
+                <p>Flowers that instantly spread happiness and joy.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-box about-us">
+                <h3>Celebration Blooms</h3>
+                <p>Joyful colors and festive floral designs for your happiest moments.</p>
+            </div>
+            <div class="footer-box links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="view.html">All Products</a>
+            </div>
+            <div class="footer-box newsletter">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" class="email-input" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="credit">© 2024 <a href="index.html">Floria</a> - Celebration Blooms</div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

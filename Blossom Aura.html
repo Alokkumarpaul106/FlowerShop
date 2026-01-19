@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blossom Aura | Premium Flower Collection - Floria</title>
+  <meta name="description" content="Blossom Aura - Premium flower collection crafted for elegance and emotion.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <link rel="stylesheet" href="blossom-aura.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .card {
+      position: relative;
+    }
+
+    .card .img-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .card .img-container img {
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Blossom Aura</h1>
+    <div class="header-right">
+      <a href="#" class="cart" id="cartBtn">🛒 <span class="count">0</span></a>
+      <a href="index.html" class="back-link-btn">← Back to Main Shop</a>
+
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>ORDER FROM YOUR TRUSTED ONLINE FLOWER SHOP NOW!</h2>
+    <h4>About Blossom Aura</h4>
+    <p>Blossom Aura is our premium flower collection crafted for elegance and emotion.
+      Every bouquet is thoughtfully designed to express love and care. We use handpicked fresh flowers to ensure lasting
+      charm and fragrance.
+      Every arrangement reflects sophistication and timeless floral artistry.
+      Perfect for celebrations, special moments, and heartfelt surprises.
+      Blossom Aura turns emotions into unforgettable floral expressions.🌸</p>
+    <a href="#collections" class="btn">Explore Collection</a>
+  </section>
+
+  <section class="section" id="collections">
+    <h3 class="section-title">Exclusive Collections</h3>
+    <div class="grid">
+      <article class="card">
+        <div class="img-container">
+          <img src="image1/rose.jpg" alt="Royal Rose Bouquet" loading="lazy">
+          <div class="card-zoom-controls">
+            <button class="card-zoom-out">−</button>
+            <button class="card-zoom-in">+</button>
+          </div>
+        </div>
+        <h4>Royal Rose Bouquet</h4>
+        <p class="price">$25.00</p>
+        <button class="btn small view-details-btn">View Details</button>
+        <button class="btn small add-to-cart-btn" data-id="ba1" data-name="Royal Rose Bouquet" data-price="25">Add to
+          Cart</button>
+      </article>
+
+      <article class="card">
+        <div class="img-container">
+          <img src="image1/gate.jpg" alt="Luxury Wedding Flowers" loading="lazy">
+          <div class="card-zoom-controls">
+            <button class="card-zoom-out">−</button>
+            <button class="card-zoom-in">+</button>
+          </div>
+        </div>
+        <h4>Luxury Wedding Flowers</h4>
+        <p class="price">$50.00</p>
+        <button class="btn small view-details-btn">View Details</button>
+        <button class="btn small add-to-cart-btn" data-id="ba2" data-name="Luxury Wedding Flowers" data-price="50">Add
+          to Cart</button>
+      </article>
+
+      <article class="card">
+        <div class="img-container">
+          <img src="image1/tupils.jpg" alt="Imported Tulips" loading="lazy">
+          <div class="card-zoom-controls">
+            <button class="card-zoom-out">−</button>
+            <button class="card-zoom-in">+</button>
+          </div>
+        </div>
+        <h4>Imported Tulips</h4>
+        <p class="price">$40.00</p>
+        <button class="btn small view-details-btn">View Details</button>
+        <button class="btn small add-to-cart-btn" data-id="ba3" data-name="Imported Tulips" data-price="40">Add to
+          Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="why">
+    <h3 class="section-title">Why Choose Blossom Aura</h3>
+    <div class="why-grid">
+      <div class="why-box">
+        <span class="icon">🌸</span>
+        <h4>Premium Flowers</h4>
+        <p>Fresh and hand-picked flowers for every bouquet.</p>
+      </div>
+      <div class="why-box">
+        <span class="icon">🚚</span>
+        <h4>Fast Delivery</h4>
+        <p>On-time delivery with care and freshness.</p>
+      </div>
+      <div class="why-box">
+        <span class="icon">🎁</span>
+        <h4>Elegant Packing</h4>
+        <p>Beautiful packaging perfect for gifting.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-box about-us">
+        <h3>Blossom Aura</h3>
+        <p>Premium flower collection crafted for elegance and unforgettable moments.</p>
+      </div>
+      <div class="footer-box links">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="view.html">All Products</a>
+      </div>
+      <div class="footer-box newsletter">
+        <h3>Newsletter</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Email Address" class="email-input" required>
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="credit">© 2024 <a href="index.html">Floria</a> - Blossom Aura</div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
