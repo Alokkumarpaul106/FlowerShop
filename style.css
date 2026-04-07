@@ -560,61 +560,25 @@ section {
 
 /* --- Media Queries (Responsive Design) --- */
 
-
-
-
-/* General fix: prevent horizontal scroll */
-html, body {
-    overflow-x: hidden;
-}
-
-/* Home Section scaling */
-.home .content h1 {
-    font-size: 5.5rem;
-}
-
-@media (max-width: 991px) {
-    .home .content h1 {
-        font-size: 4.2rem;
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header-main {
+        padding: 2rem;
+    }
+    section {
+        padding: 4rem 2rem;
+    }
+    .header .search-form {
+        padding: 0 2rem;
     }
 }
 
-@media (max-width: 768px) {
-    .home .content h1 {
-        font-size: 3.5rem;
-    }
-}
-
-@media (max-width: 450px) {
-    .home .content h1 {
-        font-size: 2.8rem;
-    }
-}
-
-/* Product Grid Scaling */
-.product-grid {
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-}
-
-@media (max-width: 450px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-}
-
-/* Collections Grid Scaling */
-.collections .box-container {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1.5rem;
-}
-
-/* Navbar & Mobile Menu */
-@media (max-width: 768px) {
+@media (max-width:768px) {
     #menu-btn {
         display: inline-block;
     }
-
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -623,56 +587,110 @@ html, body {
         background: var(--white);
         border-top: var(--border);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: clip-path 0.35s ease-in-out;
         z-index: 999;
-        flex-direction: column;
-        gap: 0;
     }
-
     .header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-
     .header .navbar a {
         display: block;
-        margin: 0;
-        padding: 1rem 2rem;
-        border-left: 0.5rem solid var(--primary-color);
+        margin: 1rem;
+        padding: 1rem;
         background: var(--light-bg);
+        border-left: .5rem solid var(--primary-color);
     }
-
-    /* Dropdown mobile fix */
-    .nav-collection:hover .collection-dropdown,
-    .nav-collection.active .collection-dropdown {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        display: block;
+    .home .content h1 {
+        font-size: 4rem;
     }
 }
 
-/* Shop Controls for mobile */
-@media (max-width: 450px) {
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
     .shop-controls {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .shop-controls .sort-options {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
+
+    
 }
 
-/* Footer scaling */
-@media (max-width: 450px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding-bottom: 2rem;
-    }
 
-    .footer-box {
-        text-align: center;
-    }
+/* --- Dropdown Menu for Collections in Navbar --- */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Collection wrapper */
+.nav-collection {
+    position: relative;
+}
+
+/* Main link */
+.collection-link {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+/* Dropdown hidden */
+.collection-dropdown {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    min-width: 220px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    padding: 10px 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.35s ease;
+    z-index: 999;
+}
+
+/* Show on hover */
+.nav-collection:hover .collection-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.collection-dropdown a {
+    display: block;
+    padding: 12px 20px;
+    color: #444;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.collection-dropdown a:hover {
+    background: #bcbaba;
+    color: #4b10fc;
+}
+/* mobile a jeno thik vabe dekha jai */
+@media (max-width: 768px) {
+
+  .box-container{
+    grid-template-columns: 1fr;
+  }
+
+  .navbar{
+    flex-direction: column;
+  }
+
+  .heading{
+    font-size: 24px;
+  }
+
 }
