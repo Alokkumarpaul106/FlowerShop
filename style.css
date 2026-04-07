@@ -560,127 +560,69 @@ section {
 
 /* --- Media Queries (Responsive Design) --- */
 
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
-    }
-    .header-main {
-        padding: 2rem;
-    }
-    section {
-        padding: 4rem 2rem;
-    }
-    .header .search-form {
-        padding: 0 2rem;
-    }
+@media (max-width:991px){
+
+html{
+font-size:55%;
 }
 
-@media (max-width:768px) {
-    #menu-btn {
-        display: inline-block;
-    }
-    .header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        border-top: var(--border);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        z-index: 999;
-    }
-    .header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    .header .navbar a {
-        display: block;
-        margin: 1rem;
-        padding: 1rem;
-        background: var(--light-bg);
-        border-left: .5rem solid var(--primary-color);
-    }
-    .home .content h1 {
-        font-size: 4rem;
-    }
+section{
+padding:4rem 2rem;
 }
 
-@media (max-width:450px) {
-    html {
-        font-size: 50%;
-    }
-    .shop-controls {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .shop-controls .sort-options {
-        margin-bottom: 1.5rem;
-    }
+.header-main{
+padding:2rem;
+}
 
-    
+.header .search-form{
+padding:0 2rem;
+}
+
 }
 
 
-/* --- Dropdown Menu for Collections in Navbar --- */
-.navbar {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+/* =============================== */
 
-/* Collection wrapper */
-.nav-collection {
-    position: relative;
-}
-
-/* Main link */
-.collection-link {
-    text-decoration: none;
-    color: #222;
-    font-weight: 500;
-    padding: 10px 0;
-}
-
-/* Dropdown hidden */
-.collection-dropdown {
-    position: absolute;
-    top: 140%;
-    left: 0;
-    min-width: 220px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
-    padding: 10px 0;
-
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.35s ease;
-    z-index: 999;
-}
-
-/* Show on hover */
-.nav-collection:hover .collection-dropdown {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-
-.collection-dropdown a {
-    display: block;
-    padding: 12px 20px;
-    color: #444;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.collection-dropdown a:hover {
-    background: #bcbaba;
-    color: #4b10fc;
-}
-
-/* mobile  */
 @media (max-width:768px){
+
+#menu-btn{
+display:inline-block;
+}
+
+/* navbar mobile */
+
+.header .navbar{
+position:absolute;
+top:100%;
+left:0;
+right:0;
+background:var(--white);
+border-top:var(--border);
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+z-index:999;
+width:100%;
+}
+
+.header .navbar.active{
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header .navbar a{
+display:block;
+margin:1rem;
+padding:1rem;
+background:var(--light-bg);
+border-left:.5rem solid var(--primary-color);
+}
+
+/* navbar fix */
+
+.navbar{
+flex-direction:column;
+gap:0;
+}
+
+/* dropdown mobile */
 
 .collection-dropdown{
 position:static;
@@ -694,9 +636,7 @@ display:none;
 display:block;
 }
 
-}
-
-@media (max-width:768px){
+/* hero */
 
 .home{
 min-height:60vh;
@@ -706,27 +646,57 @@ min-height:60vh;
 font-size:3rem;
 }
 
+/* section padding */
+
+section{
+padding:4rem 1.5rem;
 }
 
+}
+
+
+/* =============================== */
+
 @media (max-width:450px){
+
+html{
+font-size:50%;
+}
+
+/* shop controls */
+
+.shop-controls{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.shop-controls .sort-options{
+margin-bottom:1.5rem;
+}
+
+/* product image */
 
 .product-card .image-box img{
 height:18rem;
 }
 
-}
-
-@media (max-width:450px){
-
-.product-card .image-box img{
-height:18rem;
-}
-
-}
-@media (max-width:450px){
+/* footer */
 
 .footer-box{
 text-align:center;
 }
 
+}
+
+
+/* ===============================
+Extra Space Fix
+=================================*/
+
+html,body{
+overflow-x:hidden;
+}
+
+img{
+max-width:100%;
 }
