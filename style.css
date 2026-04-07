@@ -678,3 +678,55 @@ section {
     background: #bcbaba;
     color: #4b10fc;
 }
+
+/* mobile  */
+@media (max-width:768px){
+
+.collection-dropdown{
+position:static;
+opacity:1;
+visibility:visible;
+transform:none;
+display:none;
+}
+
+.nav-collection.active .collection-dropdown{
+display:block;
+}
+
+}
+
+@media (max-width:768px){
+
+.home{
+min-height:60vh;
+}
+
+.home .content h1{
+font-size:3rem;
+}
+
+}
+
+@media (max-width:450px){
+
+.product-card .image-box img{
+height:18rem;
+}
+
+}
+
+@media (max-width:450px){
+
+.product-card .image-box img{
+height:18rem;
+}
+
+}
+@media (max-width:450px){
+
+.footer-box{
+text-align:center;
+}
+
+}
